@@ -1,0 +1,54 @@
+{
+  "name": "pnpm-turborepo-comp-project",
+  "private": true,
+  "engines": {
+    "node": "16",
+    "pnpm": "6"
+  },
+  "volta": {
+    "node": "16.13.1"
+  },
+  "turbo": {
+    "baseBranch": "origin/main",
+    "pipeline": {
+      "app#build": {
+        "outputs": ["apps/app/.next"]
+      },
+      "app#generate": {
+        "dependsOn": ["app#build"],
+        "outputs": ["dist"]
+      },
+      "app#dev": {
+        "cache": false
+      },
+      "app#start": {
+        "dependsOn": ["app#generate"]
+      },
+      "e2e#run": {
+        "dependsOn": ["app#generate"]
+      },
+      "integration#run": {},
+      "unit#run": {},
+      "a11y#run": {
+        "dependsOn": ["app#generate"]
+      },
+      "perf#run": {
+        "dependsOn": ["app#generate"]
+      },
+      "styleguide#build": {},
+      "styleguide#run": {},
+      "lint": {}
+    }
+  },
+  "scripts": {
+    "preinstall": "npx only-allow pnpm"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "5.9.1",
+    "@typescript-eslint/parser": "5.9.1",
+    "eslint": "8.7.0",
+    "pnpm": "6.26.1",
+    "typescript": "4.5.4",
+    "turbo": "1.0.28"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "name": "styleguide",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "build-storybook",
+    "run": "start-storybook -p 6006",
+    "lint": "eslint --config ./.eslintrc --ext .ts src"
+  },
+  "devDependencies": {
+    "@storybook/addon-essentials": "6.4.13",
+    "@storybook/vue": "6.4.13"
+  }
+}

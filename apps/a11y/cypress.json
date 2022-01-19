@@ -1,0 +1,10 @@
+{
+  "baseUrl": "http://localhost:3000",
+  "chromeWebSecurity": false,
+  "fixturesFolder": "src/fixtures",
+  "integrationFolder": "src/integration",
+  "pluginsFile": "src/plugins/index.ts",
+  "screenshotsFolder": "src/screenshots",
+  "supportFile": "src/support/index.ts",
+  "videosFolder": "src/videos"
+}

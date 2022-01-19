@@ -1,0 +1,12 @@
+{
+  "name": "integration",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "run": "cypress run"
+  },
+  "devDependencies": {
+    "@cypress/webpack-dev-server": "1.8.0",
+    "cypress": "9.2.1"
+  }
+}

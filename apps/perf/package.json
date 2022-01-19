@@ -1,0 +1,13 @@
+{
+  "name": "perf",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "run": "pnpm start-server-and-test 'pnpm serve ../../dist' http://localhost:3000 'lhci autorun'"
+  },
+  "devDependencies": {
+    "@lhci/cli": "0.8.2",
+    "serve": "13.0.2",
+    "start-server-and-test": "1.14.0"
+  }
+}

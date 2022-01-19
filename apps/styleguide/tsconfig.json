@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "strictBindCallApply": true,
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["../app/src/*"]
+    },
+    "types": [
+      "@types/node"
+    ]
+  },
+  "includes": [
+    "src/**/*.stories.ts"
+  ]
+}
