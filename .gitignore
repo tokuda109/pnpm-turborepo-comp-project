@@ -1,5 +1,17 @@
-.pnpm-debug.log
+.DS_Store
+
+# logs
+*.log
+
+# turborepo
 .turbo
+
+# dotenv
+.env
+
 dist
 
+# dependencies
 node_modules
+
+tsconfig.tsbuildinfo

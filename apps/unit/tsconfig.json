@@ -7,8 +7,7 @@
     },
     "types": [
       "@types/jest",
-      "@types/node",
-      "@types/react"
+      "@types/node"
     ]
   },
   "includes": [

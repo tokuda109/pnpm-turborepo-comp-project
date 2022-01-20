@@ -13,35 +13,39 @@ $ npx pnpm i
 #### Build / Generate
 
 ```
-$ pnpm turbo run app:build
-$ pnpm turbo run app:generate
+$ pnpm turbo run app#build
+$ pnpm turbo run app#generate
 ```
 
 #### Dev / Start
 
 ```
-$ pnpm turbo run app:dev
-$ pnpm turbo run app:start
+$ pnpm turbo run app#dev
+$ pnpm turbo run app#start
+```
+
+### Accessibility
+
+```
+$ pnpm turbo run a11y#run
 ```
 
 ### E2E testing
 
 ```
-$ pnpm turbo run e2e:run
+$ pnpm turbo run e2e#run
 ```
 
 ### Integration testing
 
-This app doesn't work well.
-
 ```
-$ pnpm turbo run integration:run
+$ pnpm turbo run integration#run
 ```
 
 ### Unit testing
 
 ```
-$ pnpm turbo run unit:run
+$ pnpm turbo run unit#run
 ```
 
 ### Perf
