@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "run": "cypress run"
+    "open": "cypress open-ct",
+    "run": "cypress run-ct",
+    "lint": "eslint --config ./.eslintrc --ext .ts src"
   },
   "devDependencies": {
+    "@cypress/vue": "2.2.3",
     "@cypress/webpack-dev-server": "1.8.0",
     "cypress": "9.2.1"
   }

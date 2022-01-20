@@ -27,6 +27,7 @@
       "e2e#run": {
         "dependsOn": ["app#generate"]
       },
+      "integration#open": {},
       "integration#run": {},
       "unit#run": {},
       "a11y#run": {

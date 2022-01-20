@@ -26,6 +26,14 @@ module.exports = {
       if (pkg.name === 'e2e') {
       }
       if (pkg.name === 'integration') {
+        pkg.dependencies['consola'] = '^2.15.3';
+        pkg.dependencies['core-js'] = '^3.20.3';
+        pkg.dependencies['html-webpack-plugin'] = '^4.5.2';
+        pkg.dependencies['tsconfig-paths-webpack-plugin'] = '^3.5.2';
+        pkg.dependencies['vue'] = '^2.6.12';
+        pkg.dependencies['vue-template-compiler'] = '^2.6.12';
+        pkg.dependencies['webpack'] = '^4.46.0';
+        pkg.dependencies['webpack-dev-server'] = '^3.11.3';
       }
       if (pkg.name === 'mock') {
       }

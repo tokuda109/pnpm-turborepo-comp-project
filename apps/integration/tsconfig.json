@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "declaration": false,
+    "declarationMap": false,
+    "noEmit": false,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["../app/src/*"]
+    },
+    "types": [
+      "cypress"
+    ]
+  },
+  "includes": [
+    "./src/**/*.ts"
+  ]
+}
